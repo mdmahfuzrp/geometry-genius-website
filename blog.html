@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap Css file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        .accordion-button{
+            font-size: 20px !important;
+            color: rgb(49, 49, 49) !important;
+        }
+        .accordion-body, ol, li{
+            color: rgb(49, 49, 49) !important;
+            font-size: 16px !important;
+            text-align: justify;
+            font-weight: 400;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+  
+    <header class="container-lg px-0 mt-4">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg py-3 bg-primary-subtle mx-3 border" style="border-radius:
+        10px">
+            <div class="container">
+              <a class="navbar-brand fw-semibold text-uppercase" href="#" style="font-size: 25px;">About Geometry</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <a id="homebtn" href="./index.html" class="btn btn-info p-2" style="background: #3abff8; color:white; font-weight: 500;">Home</a>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+      <!-- FaQ section -->
+      <section id="faq-section" class="container">
+        <h1 class="text-center fw-bold mb-4 mt-4">Frequently Asked <span class="text-primary">Questions</span></h1>
+        <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center g-5">
+          <div class="col d-flex justify-content-center">
+            <img src="images/faq.png" class="w-75" alt="">
+          </div>
+          <div class="col"><div class="accordion" id="accordionExample">
+            <div class="accordion-item my-2 border">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fs-5 fw-semibold text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    1. What is DOM and what is the purpose of DOM?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show fs-6 fw-semibold text-secondary" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    DOM stands for Document Object Model, which is a programming interface for web documents. It represents the HTML or XML document as a tree-like structure where each node in the tree represents an element, attribute, or piece of text in the document.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-2 border">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fs-5 fw-semibold text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2. How will you select HTML elements using DOM?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-secondary">
+                    There are several ways to select HTML elements using the DOM. Here are some of the most common methods:
+                    <br>
+                    getElementsByTagName(), querySelector(), querySelectorAll(), getElementsByClassName(), getElementById()
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-2 border">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fs-5 fw-semibold text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. What is event bubble?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-secondary">
+                    Event bubbling is a process that occurs when an event is triggered on a particular element in the DOM hierarchy and then propagates or bubbles up through the parent elements until it reaches the top level or the root of the document.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item my-2 border">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fs-5 fw-semibold text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                    4. What is a callback function and why will you use it?
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-secondary">
+                    A callback function is a function that is passed as an argument to another function, and is executed by that function when a certain condition or event occurs. Callback functions are often used in asynchronous programming to handle tasks that take time to complete, such as making a server request or waiting for user input.
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Bootstrap JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
